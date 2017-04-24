@@ -1,6 +1,6 @@
 # npmtest-jsdoc
 
-#### test coverage for  [jsdoc (v3.4.3)](https://github.com/jsdoc3/jsdoc#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-jsdoc.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-jsdoc) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-jsdoc.svg)](https://travis-ci.org/npmtest/node-npmtest-jsdoc)
+#### basic test coverage for  jsdoc (v3.4.3)  [![npm package](https://img.shields.io/npm/v/npmtest-jsdoc.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-jsdoc) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-jsdoc.svg)](https://travis-ci.org/npmtest/node-npmtest-jsdoc)
 
 #### An API documentation generator for JavaScript.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-jsdoc/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-jsdoc/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-jsdoc/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-jsdoc/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-jsdoc/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-jsdoc/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-jsdoc/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-jsdoc/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-jsdoc/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-jsdoc/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-jsdoc/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-jsdoc/build/coverage.html/index.html)
 
@@ -35,20 +35,19 @@
 ```json
 
 {
-    "author": {
-        "name": "Michael Mathews"
-    },
-    "bin": {
-        "jsdoc": "./jsdoc.js"
-    },
-    "bugs": {
-        "url": "https://github.com/jsdoc3/jsdoc/issues"
-    },
-    "contributors": [
-        {
-            "url": "https://github.com/jsdoc3/jsdoc/graphs/contributors"
-        }
+    "name": "jsdoc",
+    "version": "3.4.3",
+    "revision": "1478737510220",
+    "description": "An API documentation generator for JavaScript.",
+    "keywords": [
+        "documentation",
+        "javascript"
     ],
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jsdoc3/jsdoc"
+    },
     "dependencies": {
         "bluebird": "~3.4.6",
         "catharsis": "~0.8.8",
@@ -63,7 +62,6 @@
         "taffydb": "2.6.2",
         "underscore": "~1.8.3"
     },
-    "description": "An API documentation generator for JavaScript.",
     "devDependencies": {
         "gulp": "~3.9.1",
         "gulp-eslint": "~3.0.1",
@@ -71,40 +69,27 @@
         "istanbul": "~0.4.5",
         "tv4": "https://github.com/hegemonic/tv4/tarball/own-properties"
     },
-    "directories": {},
-    "dist": {
-        "shasum": "e5740d6145c681f6679e6c17783a88dbdd97ccd3",
-        "tarball": "https://registry.npmjs.org/jsdoc/-/jsdoc-3.4.3.tgz"
-    },
     "engines": {
         "node": ">=0.10"
     },
-    "gitHead": "a31fc7c4540c61049688c9cc23c58fe9ec5481d6",
-    "homepage": "https://github.com/jsdoc3/jsdoc#readme",
-    "keywords": [
-        "documentation",
-        "javascript"
-    ],
-    "license": "Apache-2.0",
-    "maintainers": [
-        {
-            "name": "kzh"
-        },
-        {
-            "name": "hegemonic"
-        }
-    ],
-    "name": "jsdoc",
-    "optionalDependencies": {},
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/jsdoc3/jsdoc.git"
-    },
-    "revision": "1478737510220",
     "scripts": {
         "test": "gulp lint; gulp test"
     },
-    "version": "3.4.3"
+    "bin": {
+        "jsdoc": "./jsdoc.js"
+    },
+    "bugs": "https://github.com/jsdoc3/jsdoc/issues",
+    "author": {
+        "name": "Michael Mathews"
+    },
+    "contributors": [
+        {
+            "url": "https://github.com/jsdoc3/jsdoc/graphs/contributors"
+        }
+    ],
+    "maintainers": {
+        "name": "Jeff Williams"
+    }
 }
 ```
 
